@@ -1,0 +1,31 @@
+.text-center{
+    text-align: center;
+}
+.text-light{
+    color: aliceblue;
+}
+.link-website{
+    display: flex;
+    flex-flow: column wrap;
+    column-count: 12;
+    border: solid 1px indigo;
+    margin: 5px;
+    padding: 26px;
+    background-color: rgba(227, 172, 245, 0.5);
+    backdrop-filter: invert(90%);
+}
+.link-website a{
+    color: rgb(216, 209, 209);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.link-website a:hover{
+    transition: ease-out 0.5s;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform:scale(2,1);
+    background-color: blueviolet;
+    padding: 3px 3px;
+    
+}
