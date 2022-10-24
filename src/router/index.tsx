@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import './router.css'
 import { 
   Routes as Switch ,
   Route,
@@ -23,7 +24,7 @@ export default function Routes() {
     audio.play()
   },[])
   return (
-   <>
+   <div className='router-container'>
     <>
       <ScrollToTop/>
       <Nav/>
@@ -35,6 +36,6 @@ export default function Routes() {
          <Route path='*' element={<Navigate replace to={'/404'}/>}/>
         </Switch>
     </>
-   </>
+   </div>
   )
 }

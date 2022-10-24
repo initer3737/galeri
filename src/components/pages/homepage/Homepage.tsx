@@ -10,51 +10,61 @@ export default function Homepage() {
     <div className='link-website'>
       <h3 className='text-center text-light'>galeri</h3>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/newyear/#partnership'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' new years'}/>
         </Link>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/tokokita.com'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' tokokita.com'}/>
         </Link>
-        <Link 
+        <Link
+          isLinkToPage={true} 
           href={'https://initer3737.github.io/tongkronganku'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' tongkronganku'}/>
         </Link>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/bokunokanji'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' bokunokanji'}/>
         </Link>
-        <Link 
+        <Link
+          isLinkToPage={true} 
           href={'https://initer3737.github.io/colorPicker'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' colorpicker'}/>
         </Link>
-        <Link 
+        <Link
+          isLinkToPage={true} 
           href={'https://initer3737.github.io/cybersales.com'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' cybersales.com'}/>
         </Link>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/course/#/course'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' course'}/>
         </Link>
-        <Link 
+        <Link
+          isLinkToPage={true} 
           href={'https://initer3737.github.io/'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' about'}/>
         </Link>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/kalkulator'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' kalkulator'}/>
         </Link>
         <Link 
+          isLinkToPage={true}
           href={'https://initer3737.github.io/todolist-js'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' todo-list'}/>
