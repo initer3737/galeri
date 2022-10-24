@@ -8,8 +8,12 @@ export default function Loading({time}:props) {
    const styleimg={
     width:'25vw'
    }
-   setInterval(()=>{
+   let load=setInterval(()=>{
     setLoadinghandler(loadingHandler+'.')
+   },time)
+   setTimeout(()=>{
+    //clear the load inter val affter finish loading
+    clearInterval(load);
    },time)
   return (
     <div className="">
