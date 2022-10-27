@@ -69,6 +69,12 @@ export default function Homepage() {
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' todo-list'}/>
         </Link>
+        <Link 
+          isLinkToPage={true}
+          href={'https://initer3737.github.io/storage'} 
+          target={'_blank'}>
+            <Icon icon={'browser-edge'} name={' showcase'}/>
+        </Link>
     </div>
   )
 }
