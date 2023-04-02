@@ -26,7 +26,14 @@ export default function Homepage() {
      },[sliderCount,weejioPacks])
   return (
     <div className="transition-slider">
-      <video src={weejioPacks[sliderCount]} className='weejio-begeh' autoPlay loop muted></video>
+      {/* <video src={weejioPacks[sliderCount]} className='weejio-begeh' autoPlay loop muted></video> */}
+      <video src={weejio1} className={`weejio-begeh ${sliderCount === 0?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+      <video src={weejio2} className={`weejio-begeh ${sliderCount === 1?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+      <video src={weejio3} className={`weejio-begeh ${sliderCount === 2?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+      <video src={weejio4} className={`weejio-begeh ${sliderCount === 3?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+      <video src={weejio5} className={`weejio-begeh ${sliderCount === 4?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+      <video src={weejio6} className={`weejio-begeh ${sliderCount === 5?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
+
       <div className={sliderCount===1?'link-website-giyu':'link-website'}>
       <h3 className='text-center text-light'>galeri {sliderCount}</h3>
       <div className="button-container-slider">
