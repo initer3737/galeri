@@ -15,13 +15,13 @@ export default function Homepage() {
   ],[])
      useEffect(()=>{
         document.title='galeri | homepage'
-        // const sliderTimmer=setInterval(()=>{
+        const sliderTimmer=setInterval(()=>{
             
-        //     setSliderCount(sliderCount+1)
-        //     if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
-        // },3000)
+            setSliderCount(sliderCount+1)
+            if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
+        },3000)
         return ()=>{
-          // clearInterval(sliderTimmer)
+          clearInterval(sliderTimmer)
         }
      },[sliderCount,weejioPacks])
   return (
