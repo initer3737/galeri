@@ -1,10 +1,11 @@
 import React from 'react'
 type props={
     icon:string,
-    name:string
+    name:string,
+    onClick?:any,
 }
-export default function Icon({icon,name}:props) {
+export default function Icon({icon,name,onClick}:props) {
   return (
-    <i className={`bi bi-${icon}`}>{name}</i>
+    <i className={`bi bi-${icon}`} onClick={onClick}>{name}</i>
   )
 }

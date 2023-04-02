@@ -15,13 +15,13 @@ export default function Homepage() {
   ],[])
      useEffect(()=>{
         document.title='galeri | homepage'
-        const sliderTimmer=setInterval(()=>{
+        // const sliderTimmer=setInterval(()=>{
             
-            setSliderCount(sliderCount+1)
-            if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
-        },3000)
+        //     setSliderCount(sliderCount+1)
+        //     if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
+        // },3000)
         return ()=>{
-          clearInterval(sliderTimmer)
+          // clearInterval(sliderTimmer)
         }
      },[sliderCount,weejioPacks])
   return (
@@ -29,6 +29,19 @@ export default function Homepage() {
       <video src={weejioPacks[sliderCount]} className='weejio-begeh' autoPlay loop muted></video>
       <div className={sliderCount===1?'link-website-giyu':'link-website'}>
       <h3 className='text-center text-light'>galeri {sliderCount}</h3>
+      <div className="button-container-slider">
+          <Icon icon={`${sliderCount===0?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(0)}/>
+
+          <Icon icon={`${sliderCount===1?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(1)}/>
+
+          <Icon icon={`${sliderCount===2?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(2)}/>
+
+          <Icon icon={`${sliderCount===3?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(3)}/>
+
+          <Icon icon={`${sliderCount===4?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(4)}/>
+
+          <Icon icon={`${sliderCount===5?'circle-fill':'circle'} toggle-slider`} name={''} onClick={()=>setSliderCount(5)}/>
+      </div>
         <Link 
           isLinkToPage={true}
           href={'https://initer3737.github.io/newyear/#partnership'} 
