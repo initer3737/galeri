@@ -1,4 +1,4 @@
-import React ,{useEffect,useState}from 'react'
+import {useEffect,useState,useMemo}from 'react'
 import Icon from '../../smallcomponent/icon/icon'
 import Link from '../../smallcomponent/link/link'
 import './homepage.css'
@@ -10,9 +10,9 @@ import weejio5 from '../../../assets/muzan-kibutsuji-kimetsu-no-yaiba-moewalls.c
 import weejio6 from '../../../assets/nezuko-umbrella-butterfly-kimetsu-no-yaiba-moewalls.com.mp4'
 export default function Homepage() {
   let [sliderCount,setSliderCount]=useState(0)
-  const weejioPacks=[
+  const weejioPacks=useMemo(()=>[
     weejio1,weejio2,weejio3,weejio4,weejio5,weejio6
-  ]
+  ],[])
      useEffect(()=>{
         document.title='galeri | homepage'
         const sliderTimmer=setInterval(()=>{
@@ -23,7 +23,7 @@ export default function Homepage() {
         return ()=>{
           clearInterval(sliderTimmer)
         }
-     },[sliderCount])
+     },[sliderCount,weejioPacks])
   return (
     <div className="transition-slider">
       <video src={weejioPacks[sliderCount]} className='weejio-begeh' autoPlay loop muted></video>

@@ -5,9 +5,6 @@ import weejio1 from '../../assets/giyu-and-shinobu-sakura-bridge-kimetsu-no-yaib
   type props={time:number}
 export default function LoadingFirst({time}:props) {
   let [loadingHandler,setLoadinghandler]=useState('loading')
-   const styleimg={
-    width:'25vw'
-   }
    let load=setInterval(()=>{
     setLoadinghandler(loadingHandler+'.')
    },time)

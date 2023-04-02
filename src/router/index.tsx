@@ -15,7 +15,6 @@ import {
   // Nav,
   NotFound
 } from '../components/smallcomponent'
-import theme from '../assets/theme.mp3'
 import Loading from '../components/smallcomponent/loading'
 export default function Routes() {
   useEffect(()=>{

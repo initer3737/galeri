@@ -1,6 +1,5 @@
 import React from "react";
 import select from "../../../assets/select.mp3";
-import click from "../../../assets/click.mp3";
 import click2 from "../../../assets/click2.mp3";
 import { NavLink as Links } from "react-router-dom";
 type props = {

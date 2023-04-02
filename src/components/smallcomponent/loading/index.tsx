@@ -1,5 +1,5 @@
-import React, { useEffect ,useState} from 'react'
-import { useNavigate,useParams,NavLink } from 'react-router-dom'
+import  { useEffect ,useState} from 'react'
+import { useNavigate,useParams } from 'react-router-dom'
 import logo from '../../../assets/404.gif'
 import './loading.css'
 import weejio1 from '../../../assets/giyu-and-shinobu-sakura-bridge-kimetsu-no-yaiba-moewalls.com.mp4'
@@ -23,7 +23,7 @@ export default function Loading() {
       clearTimeout(counterNavigate)
       clearInterval(transitionCounter)
     }
-  },[transition])
+  },[transition,navigate,url])
   return (
     <div className=''>
       <video src={weejio1} className='weejio-begeh' autoPlay loop muted></video>
