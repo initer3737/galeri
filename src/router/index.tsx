@@ -12,27 +12,29 @@ import {
 
 import { 
   ScrollToTop ,
-  Nav,
+  // Nav,
   NotFound
 } from '../components/smallcomponent'
 import theme from '../assets/theme.mp3'
+import Loading from '../components/smallcomponent/loading'
 export default function Routes() {
   useEffect(()=>{
-    let audio=new Audio(theme);
-    audio.loop=true
-    audio.volume=0.4
-    audio.play()
+    // let audio=new Audio(theme);
+    // audio.loop=true
+    // audio.volume=0.4
+    // audio.play()
   },[])
   return (
    <div className='router-container'>
     <>
       <ScrollToTop/>
-      <Nav/>
+      {/* <Nav/> */}
     </>
     <>
         <Switch>
          <Route path='/' element={<Homepage/>}/>
          <Route path='/404' element={<NotFound/>}/>
+         <Route path='/loading/:url' element={<Loading/>}/>
          <Route path='*' element={<Navigate replace to={'/404'}/>}/>
         </Switch>
     </>

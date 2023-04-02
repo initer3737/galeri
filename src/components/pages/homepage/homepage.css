@@ -1,31 +1,80 @@
+.transition-slider{
+    transition: all 2s;
+}
+.weejio-begeh{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    transition: all 2s;
+}
 .text-center{
     text-align: center;
 }
 .text-light{
     color: aliceblue;
 }
-.link-website{
+.link-website-giyu{
+    position: absolute;
+    right: 12px;
+    top: 50px;
     display: flex;
     flex-flow: column wrap;
     column-count: 12;
-    border: solid 1px indigo;
+    border: solid 1px white;
     margin: 5px;
-    padding: 26px;
-    background-color: rgba(227, 172, 245, 0.5);
-    backdrop-filter: invert(90%);
+    padding: 56px;
+    background-color: rgba(128, 0, 128,.5);
+    /* backdrop-filter: invert(90%); */
+    /* backdrop-filter: blur(80px); */
+    box-shadow: 0px 0px 19px white;
+}
+.link-website-giyu a{
+    color: rgb(216, 209, 209);
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 2px solid white;
+}
+.link-website-giyu a:hover{
+    transition: ease-out 0.5s;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* transform:scale(2,1); */
+    background-color: lightskyblue;
+    /* padding: 3px 3px; */
+    
+}
+.link-website{
+    position: absolute;
+    right: 12px;
+    top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    column-count: 12;
+    border: solid 1px white;
+    margin: 5px;
+    padding: 56px;
+    /* background-color: rgba(227, 172, 245, 0.5); */
+    /* backdrop-filter: invert(90%); */
+    backdrop-filter: blur(80px);
+    box-shadow: 0px 0px 19px white;
 }
 .link-website a{
     color: rgb(216, 209, 209);
     text-decoration: none;
     text-transform: capitalize;
+    border-bottom: 2px solid white;
 }
 .link-website a:hover{
     transition: ease-out 0.5s;
     color: whitesmoke;
     text-decoration: none;
     text-transform: capitalize;
-    transform:scale(2,1);
+    /* transform:scale(2,1); */
     background-color: blueviolet;
-    padding: 3px 3px;
+    /* padding: 3px 3px; */
     
 }

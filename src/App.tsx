@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Routes from './router'
-import Loading from './components/fiture/loading'
+import LoadingFirst from './components/fiture/loadingFirst'
 
 const App=()=>{
     let [isLoading,setIsloading]=useState(true);
@@ -10,6 +10,7 @@ const App=()=>{
     },5000)
 },[])
 
-return isLoading? <Loading time={1000}/>: <Routes/>
+return isLoading? <LoadingFirst time={1000}/>: <Routes/>
+// return <LoadingFirst time={1000}/>
 }
 export default App

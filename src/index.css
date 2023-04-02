@@ -38,11 +38,13 @@ body {
   place-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: var(--gambargif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: var(--gambargif); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   scroll-behavior: smooth;
   overflow: hidden;
+  background:linear-gradient(45deg blur(10px)) ;
+  /* background: linear-gradient(white,blue); */
 }
 
 h1 {
