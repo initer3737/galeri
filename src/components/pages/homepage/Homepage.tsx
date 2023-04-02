@@ -19,7 +19,7 @@ export default function Homepage() {
             
             setSliderCount(sliderCount+1)
             if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
-        },3000)
+        },9000)
         return ()=>{
           clearInterval(sliderTimmer)
         }
