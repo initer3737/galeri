@@ -80,7 +80,7 @@ export default function Homepage() {
         </Link>
         <Link 
           isLinkToPage={true}
-          href={'https://initer3737.github.io/course/#/course'} 
+          href={'https://course-4dr4n0zwn-initer3737.vercel.app/'} 
           target={'_blank'}>
             <Icon icon={'browser-edge'} name={' course'}/>
         </Link>
