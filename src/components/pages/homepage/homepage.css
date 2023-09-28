@@ -42,7 +42,7 @@
     color: aliceblue;
 }
 .link-website-giyu{
-    z-index: 999;
+    z-index: 999999;
     position: absolute;
     right: 12px;
     top: 50px;
@@ -74,7 +74,7 @@
     /* padding: 3px 3px; */
 }
 .link-website{
-    z-index: 999;
+    z-index: 999999;
     position: absolute;
     right: 12px;
     top: 50px;
@@ -105,4 +105,15 @@
     background-color: blueviolet;
     /* padding: 3px 3px; */
     
+}
+
+.filter-weejio-1{
+    background-color: rgba(32, 32, 175, 0.5);
+    height:100vh;
+    width:100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index:9999;
+    position: absolute;
+    inset:0;
 }

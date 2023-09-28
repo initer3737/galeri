@@ -17,7 +17,7 @@ export default function Homepage() {
         document.title='galeri | homepage'
         const sliderTimmer=setInterval(()=>{
             
-            setSliderCount(sliderCount+1)
+            // setSliderCount(sliderCount+1)
             if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
         },9000)
         return ()=>{
@@ -26,6 +26,7 @@ export default function Homepage() {
      },[sliderCount,weejioPacks])
   return (
     <div className="transition-slider">
+      <div className="filter-weejio-1"></div>
       {/* <video src={weejioPacks[sliderCount]} className='weejio-begeh' autoPlay loop muted></video> */}
       <video src={weejio1} className={`weejio-begeh ${sliderCount === 0?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
       <video src={weejio2} className={`weejio-begeh ${sliderCount === 1?'weejio-begeh-appear':'weejio-begeh-disappear' }` }autoPlay loop muted></video>
