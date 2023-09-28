@@ -17,7 +17,7 @@ export default function Homepage() {
         document.title='galeri | homepage'
         const sliderTimmer=setInterval(()=>{
             
-            // setSliderCount(sliderCount+1)
+            setSliderCount(sliderCount+1)
             if(sliderCount >= weejioPacks.length-1)setSliderCount(0)
         },9000)
         return ()=>{
